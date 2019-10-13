@@ -1,0 +1,16 @@
+title: Deyan Dobrinov's blog
+email: deyan.dobrinov@gmail.com
+description: Blogging about software development
+
+baseurl: ""
+url: "http://dobrinov.github.io"
+github_username: dobrinov
+
+# Build settings
+theme: minima
+plugins:
+  - jekyll-feed
+
+paginate: 5
+repository: dobrinov/dobrinov.github.io
+github: [metadata]
