@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Products — Deyan Dobrinov</title>
+<meta name="description" content="Small developer tools that are also libraries: diagram, a FigJam-style board as plain text, and schema, ER diagrams and visual diffs for database schemas.">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Products — Deyan Dobrinov">
+<meta property="og:description" content="diagram and schema: small developer tools that are also libraries. Rust + WebAssembly.">
+<meta property="og:url" content="https://dobrinov.github.io/products/">
+<meta property="og:image" content="https://dobrinov.github.io/diagram/og.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="stylesheet" href="site.css">
+<!-- Privacy-friendly analytics by Plausible -->
+<script async src="https://stats.aparatnata.com/js/pa-vpEP-87AN5QhZeviK1ZS9.js"></script>
+<script>
+  window.plausible=window.plausible||function(){(plausible.q=plausible.q||[]).push(arguments)},plausible.init=plausible.init||function(i){plausible.o=i||{}};
+  plausible.init()
+</script></head>
+<body>
+<header class="nav">
+  <a class="brand" href="/"><img class="logo" src="/favicon.svg" alt="">Deyan Dobrinov</a>
+  <nav>
+    <a href="/products/">Products</a>
+    <a href="/diagram/">diagram</a>
+    <a href="/schema/">schema</a>
+    <a class="gh" href="https://github.com/dobrinov">GitHub</a>
+  </nav>
+</header>
+
+<section class="hero products-hero" style="display:block">
+  <p class="eyebrow">Rust · WebAssembly · Open source</p>
+  <h1>Small tools.<br><span class="grad">That are also libraries.</span></h1>
+  <p class="lede">Each one does one job, runs in your terminal and your browser from the same engine, keeps its data as text in your repository, and works with your AI agent. Install any of them with Homebrew, or grab a binary for macOS, Linux or Windows.</p>
+</section>
+
+<section class="products">
+  <article class="prod">
+    <a class="shot" href="/diagram/"><img src="/diagram/og.png" alt="diagram: a mindmap, a kanban board, a sequence diagram and a decision record on one board" loading="lazy"></a>
+    <div class="body">
+      <span class="tag">Boards · Planning · AI</span>
+      <h2><img src="/diagram/favicon.svg" alt=""><a href="/diagram/">diagram</a></h2>
+      <p>A FigJam-style board that lives in your repository as plain text. Mindmaps, kanban, gantt, sequence and ER diagrams, decision records and charts — review comments become prompts, and Ask AI runs on your own Claude, Codex or Gemini subscription.</p>
+      <div class="install-line"><code>brew install dobrinov/tap/diagram</code></div>
+      <div class="links">
+        <a class="btn primary" href="/diagram/">Website</a>
+        <a class="btn" href="/diagram/app/">Playground</a>
+        <a class="btn" href="https://github.com/dobrinov/diagram">GitHub</a>
+      </div>
+    </div>
+  </article>
+
+  <article class="prod">
+    <a class="shot" href="/schema/"><img src="/schema/og.png" alt="schema: see your Postgres schema, and how it changes" loading="lazy"></a>
+    <div class="body">
+      <span class="tag">Databases · Git · Review</span>
+      <h2><img src="/schema/favicon.svg" alt=""><a href="/schema/">schema</a></h2>
+      <p>Interactive ER diagrams and visual git diffs for Postgres <code>structure.sql</code>, MySQL dumps, SQLite schemas and Rails <code>schema.rb</code> files. Focus on the tables that matter and review every migration as a picture.</p>
+      <div class="install-line"><code>brew install dobrinov/tap/schema</code></div>
+      <div class="links">
+        <a class="btn primary" href="/schema/">Website</a>
+        <a class="btn" href="/schema/app/">Playground</a>
+        <a class="btn" href="https://github.com/dobrinov/schema">GitHub</a>
+      </div>
+    </div>
+  </article>
+
+  <article class="prod soon">
+    <h2>More on the way</h2>
+    <p>New tools land here first. Follow along on <a href="https://github.com/dobrinov">GitHub</a>.</p>
+  </article>
+</section>
+
+<footer>
+  <span>Deyan Dobrinov</span>
+  <a href="/">Home</a><a href="/diagram/">diagram</a><a href="/schema/">schema</a><a href="https://github.com/dobrinov">GitHub</a>
+</footer>
+</body>
+</html>

@@ -1,37 +1,75 @@
----
-layout: default
-title: Posts
----
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Deyan Dobrinov</title>
+<meta name="description" content="Deyan Dobrinov builds small developer tools that are also libraries: schema and diagram.">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Deyan Dobrinov">
+<meta property="og:description" content="Small developer tools that are also libraries: schema and diagram.">
+<meta property="og:url" content="https://dobrinov.github.io/">
+<link rel="stylesheet" href="/style.css">
+<!-- Privacy-friendly analytics by Plausible -->
+<script async src="https://stats.aparatnata.com/js/pa-vpEP-87AN5QhZeviK1ZS9.js"></script>
+<script>
+  window.plausible=window.plausible||function(){(plausible.q=plausible.q||[]).push(arguments)},plausible.init=plausible.init||function(i){plausible.o=i||{}};
+  plausible.init()
+</script></head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <a class="me" href="/"><img src="/favicon.svg" alt="">Deyan Dobrinov</a>
+    <nav>
+      <a href="/products/">Products</a>
+      <a class="hide-sm" href="#earlier">Earlier projects</a>
+      <a href="https://github.com/dobrinov">GitHub</a>
+    </nav>
+  </header>
 
-<div class="posts">
-  {% for post in paginator.posts %}
-  <div class="post">
-    <h1 class="post-title">
-      <a href="{{ post.url }}">
-        {{ post.title }}
-      </a>
-    </h1>
-
-    <span class="post-date">{{ post.date | date_to_string }}</span>
-
-    {{ post.content }}
+  <div class="intro">
+    <h1>I build small tools <em>that are also libraries.</em></h1>
+    <p>Each one does one job well, runs in your terminal and your browser from the same Rust engine, and is easy to compose with the others — and with your AI agent.</p>
   </div>
-  {% endfor %}
-</div>
 
-<div class="pagination">
-  {% if paginator.next_page %}
-    <a class="pagination-item older" href="/page{{paginator.next_page}}">Older</a>
-  {% else %}
-    <span class="pagination-item older">Older</span>
-  {% endif %}
-  {% if paginator.previous_page %}
-    {% if paginator.page == 2 %}
-      <a class="pagination-item newer" href="/">Newer</a>
-    {% else %}
-      <a class="pagination-item newer" href="/page{{paginator.previous_page}}">Newer</a>
-    {% endif %}
-  {% else %}
-    <span class="pagination-item newer">Newer</span>
-  {% endif %}
+  <section>
+    <h2>Products <a href="/products/">All products →</a></h2>
+    <div class="products">
+      <a class="product" href="/diagram/">
+        <img class="shot" src="/diagram/og.png" alt="diagram: a mindmap, a kanban board, a sequence diagram and a decision record on one board" loading="lazy">
+        <div class="body">
+          <h3><img src="/diagram/favicon.svg" alt="">diagram</h3>
+          <p>A FigJam-style board that lives in your repository as plain text — mindmaps, kanban, gantt, sequence and ER diagrams, with AI on your own subscription.</p>
+          <span class="go">Visit diagram →</span>
+        </div>
+      </a>
+      <a class="product" href="/schema/">
+        <img class="shot" src="/schema/og.png" alt="schema: see your Postgres schema, and how it changes" loading="lazy">
+        <div class="body">
+          <h3><img src="/schema/favicon.svg" alt="">schema</h3>
+          <p>Interactive ER diagrams and visual git diffs for Postgres, MySQL and SQLite schemas and Rails <code>schema.rb</code> files.</p>
+          <span class="go">Visit schema →</span>
+        </div>
+      </a>
+    </div>
+  </section>
+
+  <section id="earlier">
+    <h2>Earlier projects</h2>
+    <ul class="earlier">
+      <li><b>RemoteConf</b><a href="https://www.remoteconf.dev">remoteconf.dev</a></li>
+      <li><b>Textstandup</b><a href="https://www.textstandup.com">textstandup.com</a></li>
+      <li><b>Dev Wanted</b><a href="https://www.devwanted.com">devwanted.com</a></li>
+      <li><b>Carpass</b><a href="https://www.carpass.bg">carpass.bg</a></li>
+    </ul>
+  </section>
+
+  <footer>
+    <span>© Deyan Dobrinov</span>
+    <a href="/products/">Products</a>
+    <a href="https://github.com/dobrinov">GitHub</a>
+  </footer>
 </div>
+</body>
+</html>
