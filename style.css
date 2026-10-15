@@ -33,9 +33,5 @@ section > h2 a { font-weight: 500; letter-spacing: 0; text-transform: none; font
 .product h3 img { width: 26px; height: 26px; }
 .product p { margin: 0; color: var(--muted); font-size: 16px; }
 .product .go { display: inline-block; margin-top: 14px; color: var(--accent); font-weight: 600; font-size: 15px; }
-.earlier { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); gap: 12px 24px; }
-.earlier li { padding: 14px 0; border-top: 1px solid var(--line); }
-.earlier b { display: block; font: 700 19px/1.3 var(--serif); }
-.earlier a { font-size: 15px; }
 footer { padding: 36px 0 56px; color: var(--muted); font-size: 14px; display: flex; gap: 20px; flex-wrap: wrap; }
 @media (max-width: 640px) { header.top nav a.hide-sm { display: none; } .intro { padding: 40px 0; } }
