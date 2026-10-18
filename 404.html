@@ -6,6 +6,12 @@
 <title>Not found — Deyan Dobrinov</title>
 <link rel="icon" type="image/svg+xml" href="/favicon.svg">
 <link rel="stylesheet" href="/style.css">
+<script>
+  // diagram is now Shape: its old addresses move to the new ones
+  if (/^\/diagram(\/|$)/.test(location.pathname)) {
+    location.replace(location.pathname.replace(/^\/diagram/, "/shape") + location.search + location.hash);
+  }
+</script>
 </head>
 <body>
 <div class="wrap">
