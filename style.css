@@ -14,7 +14,7 @@ a:hover { text-decoration: underline; text-underline-offset: 3px; }
 .wrap { max-width: 980px; margin: 0 auto; padding: 0 24px; }
 header.top { display: flex; justify-content: space-between; align-items: center; padding: 28px 0; }
 header.top .me { display: flex; align-items: center; gap: 12px; color: var(--ink); font-weight: 600; }
-header.top .me img { width: 32px; height: 32px; border-radius: 8px; }
+header.top .me img { width: 32px; height: 32px; border-radius: 50%; }
 header.top nav { display: flex; gap: 22px; font-size: 15px; }
 header.top nav a { color: var(--muted); }
 .intro { padding: 72px 0 56px; border-bottom: 1px solid var(--line); }
